@@ -83,7 +83,9 @@ public class PersonApp {
 				System.out.print(">번호");
 				plist.remove(sc.nextInt());
 				System.out.println("[삭제되었습니다.]");
-				
+				for(int i = 0; i < plist.size();i++) {
+					bw.write(backtolist(plist, i));
+				}
 			}else if(Mnum == 4) {
 				
 				System.out.println("<4.검색>");
